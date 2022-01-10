@@ -1,0 +1,35 @@
+.big-button {
+	width: 120px;
+	height: 50px;
+	border: solid 2px white;
+	border-radius: 10px;
+	background: none;
+	color: white;
+	transition: background 0.5s, color 0.5s;
+}
+
+.big-button:hover {
+    background-color: white;
+    color: black;
+}
+
+body {
+	background-color: black;
+	color: white;
+	-webkit-animation: entrance 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: entrance 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@keyframes entrance {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
